@@ -1,2 +1,2 @@
 language: java
-script: ant -lib lib/ant-salesforce.jar -Dsf.username=SFUSER -Dsf.password=SFPW deploy
+script: ant -lib lib/ant-salesforce.jar -Dsf.username=env.SFUSER -Dsf.password=env.SFPW deploy
