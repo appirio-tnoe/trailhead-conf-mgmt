@@ -1,0 +1,2 @@
+language: java
+script: ant -Dsf.username=travisci-user@something.com -Dsf.password=travisci123 deploy
