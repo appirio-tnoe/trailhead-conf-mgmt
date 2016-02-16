@@ -1,2 +1,2 @@
 language: java
-script: ant -lib lib/ant-salesforce.jar -Dsf.username=travisci-user@something.com -Dsf.password=travisci123 deploy
+script: ant -lib lib/ant-salesforce.jar -Dsf.username=SFUSER -Dsf.password=SFPW deploy
