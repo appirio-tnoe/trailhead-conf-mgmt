@@ -67,7 +67,7 @@
     <fields>
         <fullName>Level__c</fullName>
         <externalId>false</externalId>
-        <label>Level Change</label>
+        <label>Level</label>
         <picklist>
             <picklistValues>
                 <fullName>Beginner</fullName>
