@@ -9,6 +9,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>*</members>
+        <name>Trigger</name>
+    </types>
+    <types>
         <members>Session_Speaker__c</members>
         <members>Session__c</members>
         <members>Speaker__c</members>
