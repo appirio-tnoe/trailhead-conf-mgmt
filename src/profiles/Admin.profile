@@ -133,6 +133,10 @@
         <object>Speaker__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>SpeakerForm</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <tabVisibilities>
         <tab>Session__c</tab>
         <visibility>DefaultOn</visibility>
