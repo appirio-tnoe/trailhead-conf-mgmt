@@ -9,7 +9,6 @@
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
         deployRoot="src" 
-        allowMissingFiles="true"
         logType="Detail"/>
     </target>
 
