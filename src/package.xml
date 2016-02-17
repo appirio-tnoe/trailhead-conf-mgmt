@@ -10,7 +10,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>Trigger</name>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>Session_Speaker__c</members>
