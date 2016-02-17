@@ -52,7 +52,7 @@
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
@@ -94,12 +94,20 @@
         <unique>false</unique>
     </fields>
     <label>Speaker</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>SP-{00000}</displayFormat>
         <label>Speaker Number</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Speakers</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>First_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Last_Name__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
