@@ -17,9 +17,7 @@
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>Session_Speaker__c</members>
-        <members>Session__c</members>
-        <members>Speaker__c</members>
+        <members>*</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -27,8 +25,7 @@
         <name>CustomTab</name>
     </types>
     <types>
-        <members>Session__c-Session Layout</members>
-        <members>Speaker__c-Speaker Layout</members>
+        <members>*</members>
         <name>Layout</name>
     </types>
     <types>
