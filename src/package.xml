@@ -5,6 +5,10 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>Session_Speaker__c</members>
         <members>Session__c</members>
         <members>Speaker__c</members>
