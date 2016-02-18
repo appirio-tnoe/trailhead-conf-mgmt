@@ -8,8 +8,7 @@
         username="${sf.username}" 
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
-        deployRoot="src" 
-        logType="Detail"/>
+        deployRoot="src"/>
     </target>
 
      <target name="deployWithTests">
@@ -18,8 +17,7 @@
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
         deployRoot="src" 
-        testLevel="RunLocalTests"
-        logType="Detail"/>
+        testLevel="RunLocalTests"/>
     </target>
 
     <target name="retrieve">

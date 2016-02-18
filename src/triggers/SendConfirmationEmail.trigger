@@ -18,13 +18,15 @@ trigger SendConfirmationEmail on Session_Speaker__c (after insert) {
         // Send confirmation email if we know the speaker's email address
         Session_Speaker__c sessionSpeaker = sessionSpeakers[0];
         if (sessionSpeaker.Speaker__r.Email__c != null) {
-            String address = sessionSpeaker.Speaker__r.Email__c;
+            //String address = sessionSpeaker.Speaker__r.Email__c;
+            String[] address = new String[] { sessionSpeaker.Speaker__r.Email__c };
             String subject = 'Speaker Confirmation';
             String message = 'Dear ' + sessionSpeaker.Speaker__r.First_Name__c +
                 			 ',\nYour session "' + sessionSpeaker.Session__r.Name +
                 		     '" on ' + sessionSpeaker.Session__r.Session_Date__c +
                              ' is confirmed.\n\nThanks for speaking at the conference!';
-            EmailManager.sendMail(address, subject, message);
+            Messaging.SingleEmailMessage mail = EmailManager.createMail(address, subject, message);
+            Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
         }
     }
 }
