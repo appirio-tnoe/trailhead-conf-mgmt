@@ -12,6 +12,16 @@
         logType="Detail"/>
     </target>
 
+     <target name="deployWithTests">
+      <sf:deploy 
+        username="${sf.username}" 
+        password="${sf.password}" 
+        serverurl="${sf.serverurl}" 
+        deployRoot="src" 
+        testLevel="RunLocalTests"
+        logType="Detail"/>
+    </target>
+
     <target name="retrieve">
       <mkdir dir="src-retrieve"/>
       <!-- Retrieve the contents into another directory -->
