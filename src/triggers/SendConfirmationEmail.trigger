@@ -25,8 +25,9 @@ trigger SendConfirmationEmail on Session_Speaker__c (after insert) {
                 			 ',\nYour session "' + sessionSpeaker.Session__r.Name +
                 		     '" on ' + sessionSpeaker.Session__r.Session_Date__c +
                              ' is confirmed.\n\nThanks for speaking at the conference!';
-            Messaging.SingleEmailMessage mail = EmailManager.createMail(address, subject, message);
-            Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
+            //Messaging.SingleEmailMessage mail = EmailManager.createMail(address, subject, message);
+            //Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
+            EmailManager.sendMail(address, subject, message);
         }
     }
 }
