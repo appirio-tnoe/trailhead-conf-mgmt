@@ -18,8 +18,7 @@ trigger SendConfirmationEmail on Session_Speaker__c (after insert) {
         // Send confirmation email if we know the speaker's email address
         Session_Speaker__c sessionSpeaker = sessionSpeakers[0];
         if (sessionSpeaker.Speaker__r.Email__c != null) {
-            //String address = sessionSpeaker.Speaker__r.Email__c;
-            String[] address = new String[] { sessionSpeaker.Speaker__r.Email__c };
+            String address = sessionSpeaker.Speaker__r.Email__c ;
             String subject = 'Speaker Confirmation';
             String message = 'Dear ' + sessionSpeaker.Speaker__r.First_Name__c +
                 			 ',\nYour session "' + sessionSpeaker.Session__r.Name +
