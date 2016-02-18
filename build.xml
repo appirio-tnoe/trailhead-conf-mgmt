@@ -22,7 +22,6 @@
 
     <target name="retrieve">
       <mkdir dir="src-retrieve"/>
-      <!-- Retrieve the contents into another directory -->
       <sf:retrieve 
         username="${sf.username}" 
         password="${sf.password}" 
